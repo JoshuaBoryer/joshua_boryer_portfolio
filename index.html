@@ -1,78 +1,138 @@
 <!DOCTYPE html>
-<html>
-<head> 
-   <title> Joshua Boryer Portfolio </title>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Joshua Boryer Portfolio</title>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
    <style>
-      header {
-         text-align: center;
-         margin-bottom: 20px;
-      }
-      header h1 {
-         font-size: 36px;
-         margin: 0;
-      }
-      header .tagline {
-         font-size: 18px;
-         color: gray;
-         margin-top: 5px;
-      }
-      main {
-         max-width: 800px;
-         margin: 0 auto;
-         line-height: 1.6;
-         padding: 0 20px;
-      }
-      nav {
-         text-align: center;
-         margin-bottom: 30px;
-      }
-      nav a {
-         margin: 0 15px;
-         text-decoration: none;
-         color: #333;
-         font-weight: bold;
-      }
       body {
-         background-color: #ffffff;
-         color: #0d3b66;
-         font-family: 'Roboto', sans-serif;
          margin: 0;
          padding: 0;
+         background-color: #ffffff;
+         color: #1F1F1F;
+         font-family: 'DM Sans', sans-serif;
+         line-height: 1.6;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      header {
+         text-align: center;
+         margin-bottom: px;
+         padding: 25px 0;
+         background-color: #F5F7FA;
+      }
+
+      header h1 {
+         font-size: 36px;
+         color: #092954;
+         margin: 0;
+         font-weight: 700;
+      }
+
+      header .tagline {
+         font-size: 18px;
+         font-weight: 500;
+         color: #B6BAC2;
+         margin-top: 5px;
+      }
+
+      nav {
+         display: flex; 
+         justify-content: center;
+         gap: 40px;
+         position: sticky;
+         top: 0;
+         background-color: #E8F1FA;
+         padding: 5px 0;
+         z-index: 20;
+         text-align: center;
+         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+
+      nav a {
+         margin: 0 20px;
+         color: #233169;
+         font-weight: 600;
+         transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+         color: #BDBDFF;
+      }
+
+      main {
+         max-width: 800px;
+         margin: 30px auto;
+         padding: 0 20px;
+      }
+
+      main p {
+         font-weight: 500;
+         margin-bottom: 20px;
+      }
+
+      footer {
+         max-width: 800px;
+         margin: 30px auto;
+         padding: 20px;
+         background-color: #E8F1FA;
+         font-weight: 500;
+         line-height: 1.5;
+         border-top: 1px solid #D3DCE6;
+      }
+
+      footer p {
+         margin: 5px 0;
+      }
+
+      @media (max-width: 600px) {
+         header h1 {
+            font-size: 28px;
+         }
+
+         nav a {
+            display: block;
+            margin: 10px 0;
+         }
+
+         main {
+            padding: 0 15px;
+         }
       }
    </style>
 </head>
-<body> 
-  <header> 
-     <h1>Joshua Boryer Portfolio</h1>
-     <p class="tagline">Data Science student exploring ideas </p>
-  </header>
-   <nav> 
-      <a href="essays-and-written-communication.html">Essays & Written Communication</a>
-      <a href="about.html">About me</a>
+<body>
+   <header>
+      <h1>Joshua Boryer Portfolio</h1>
+      <p class="tagline">Data Science student exploring ideas</p>
+   </header>
+
+   <nav>
+      <a href="about.html">About Me</a>
       <a href="projects.html">Programs & Projects</a>
-      <a href="work-experience.html">Work Experiences</a> 
+      <a href="work-experience.html">Work Experience</a>
    </nav>
+
    <main>
-      <p> 
-         I’m a Data Science student at the University of Canterbury with a strong foundation in Python programming, statistics, and data analysis. 
-         Through my coursework in algorithms, data analysis, data visualisation, and statistical modelling I’ve gained practical experience in transforming raw data into meaningful insights.
+      <p>
+         I’m a Data Science student at the University of Canterbury with a strong foundation in Python programming, statistics, and data analysis. Through my coursework in algorithms, data analysis, data visualisation, and statistical modelling, I’ve gained practical experience in transforming raw data into meaningful insights.
       </p>
       <p>
-         I have a particular interest in solving real world problems across industries like energy, finance, sustainability, and customer services. 
-         Currently seeking internship opportunities where I can grow my skills and contribute to impactful, data driven projects.
+         I have a particular interest in solving real-world problems across industries such as energy, finance, sustainability, and customer services. I am currently seeking internship opportunities where I can grow my skills and contribute to impactful, data-driven projects.
       </p>
       <p>
-         I'm especially keen to explore the fields of Artificial Intelligence, Data Analysis, and Data Engineering with an eagersness to collaborate, keep learning, and apply data science in ways that make a real difference.
+         I’m especially keen to explore the fields of Artificial Intelligence, Data Analysis, and Data Engineering with an eagerness to collaborate, keep learning, and apply data science in ways that make a real difference.
       </p>
    </main>
-   <footer> 
-      <p> 
-         joshuaboryer@gmail.com <br>
-         022-111-2538 <br>
-         Canterbury, Christchurch
-      </p>
-</footer>
+
+   <footer>
+      <p>Email: <a href="mailto:JoshuaBoryer@gmail.com">JoshuaBoryer@gmail.com</a></p>
+      <p>Phone: 022-111-2538</p>
+      <p>Location: Canterbury, Christchurch</p>
+   </footer>
 </body>
 </html>
-
-
