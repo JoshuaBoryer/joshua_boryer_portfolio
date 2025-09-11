@@ -14,32 +14,27 @@
          font-family: 'DM Sans', sans-serif;
          line-height: 1.6;
       }
-
       a {
          text-decoration: none;
       }
-
       header {
          text-align: center;
          margin-bottom: px;
          padding: 25px 0;
          background-color: #F5F7FA;
       }
-
       header h1 {
          font-size: 36px;
          color: #092954;
          margin: 0;
          font-weight: 700;
       }
-
       header .tagline {
          font-size: 18px;
          font-weight: 500;
          color: #B6BAC2;
          margin-top: 5px;
       }
-
       nav {
          display: flex; 
          justify-content: center;
@@ -52,29 +47,24 @@
          text-align: center;
          box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       }
-
       nav a {
          margin: 0 20px;
          color: #233169;
          font-weight: 600;
          transition: color 0.3s ease;
       }
-
       nav a:hover {
          color: #BDBDFF;
       }
-
       main {
          max-width: 800px;
          margin: 30px auto;
          padding: 0 20px;
       }
-
       main p {
          font-weight: 500;
          margin-bottom: 20px;
       }
-
       footer {
          max-width: 800px;
          margin: 30px auto;
@@ -84,7 +74,6 @@
          line-height: 1.5;
          border-top: 1px solid #D3DCE6;
       }
-
       footer p {
          margin: 5px 0;
       }
@@ -93,16 +82,19 @@
          header h1 {
             font-size: 28px;
          }
-
          nav a {
             display: block;
             margin: 10px 0;
          }
-
          main {
             padding: 0 15px;
          }
       }
+      .content {
+         display: none;
+         margin-bottom: 20px;
+      }
+      
    </style>
 </head>
 <body>
@@ -154,6 +146,20 @@
       <p>Phone: 022-111-2538</p>
       <p>Location: Canterbury, Christchurch</p>
    </footer>
+   <script>
+      const collapsibles = document.querySelectorAll('.collapsible');
+      collapsibles.forEach(button => {
+         button.addEventListener('click', () => {
+            button.classList.toggle('active'); // optional: style active button
+            const content = button.nextElementSibling;
+            if (content.style.display === "block") {
+               content.style.display = "none";
+            } else {
+               content.style.display = "block";
+            }
+         });
+      });
+   </script>
 </body>
 </html>
 
