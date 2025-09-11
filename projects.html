@@ -209,6 +209,53 @@
               </p>
               <embed src="stat201_assignment_5.pdf" type="application/pdf" width="100%" height="600px">
            </div>
+           <h4>
+              More Linear Mixed Models
+           </h4>
+           <button type="button" class ="collapsible">View Full ↓</button>
+           <div class="content">
+              <p>
+                 I analyzed factors affecting social media engagement and cardiovascular fitness over time. 
+                 For social media engagement, I examined how fashion type (fast or sustainable), post type (text, image, video), and platform (Social Media A–G) influence engagement. 
+                 Using a linear mixed model with random intercepts and slopes for post type nested within platform, I found that sustainable fashion generally generates higher engagement than fast fashion, with the most engaging post type varying by platform.
+                 Video performs best on some platforms, text on others, and images on a few. For cardiovascular fitness, I tracked VO2max over 16 weeks, treating individuals and weeks as factors in linear mixed models.
+                 The analysis showed that VO2max increases over time, though individuals differ in baseline fitness and improvement rates. 
+                 Correlations indicate consistent progress in later weeks, confirming that both baseline differences and individual response rates are important factors in fitness improvements.
+              </p>
+              <embed src="41497475_STAT201_Assignment_6.pdf" type="application/pdf" width="100%" height="600px">
+           </div>
+           <h4>
+              PCA Dimension Reduction
+           </h4>
+           <button type="button" class ="collapsible">View Full ↓</button>
+           <div class="content">
+              <p>
+                 I used principal component analysis (PCA) to explore energy and population datasets. 
+                 For the energy data, Submetering1 and Submetering3, and Submetering2 and Submetering3, showed moderate correlations, while GlobalActivePower and GlobalIntensity were strongly correlated.
+                 Scaling the variables allowed PCA to reveal that GlobalReactivePower and Submetering3 were best represented by the first two components, with six components explaining 99% of the variance. 
+                 For the population data, after removing non-informative variables, PC1 captured age and growth differences, while PC2 reflected population density. 
+                 Cluster 2 countries had higher growth and younger populations, whereas Cluster 4 were more urbanized with older populations. 
+                 PCA effectively highlighted key patterns and reduced complexity in both datasets.
+              </p>
+              <embed src="41497475_STAT201_Assignment_7.pdf" type="application/pdf" width="100%" height="600px">
+           </div>
+           <h4>
+              Decision Trees, Random Forests, K-means clustering, Classification
+           </h4>
+           <button type="button" class ="collapsible">View Full ↓</button>
+           <div class="content">
+              <p>
+                 I performed k-means clustering and classification analysis on two datasets. 
+                 For the ionosphere data, all variables were numerical and scaled to equalize units. 
+                 Using the elbow method, I initially chose four clusters, but after observing overlapping clusters, I adjusted to three, which produced a clearer separation.
+                 The first principal component alone was insufficient to separate the clusters, as separation depended on both the first and second components. 
+                 Setting a random seed ensured reproducible clustering results. 
+                 Cluster 3 had the highest average pulse number (V13) at 0.7. For the appendicitis dataset, the outcome variable was converted to a factor with "appendicitis" as the positive outcome. 
+                 A logistic regression model achieved a misclassification error of 7.7%, while cross-validation reflected a more accurate prediction error of 5.8%. A decision tree predicted no appendicitis for a patient with low risk scores, and a random forest with 1,000 trees confirmed that 200 trees were sufficient for stable error rates. 
+                 The random forest model had perfect classification on the training data, demonstrating the highest area under the curve and best performance.
+              </p>
+              <embed src="41497475_STAT201_Assignment_8.pdf" type="application/pdf" width="100%" height="600px">
+           </div>
     </section>
 
    </main>
